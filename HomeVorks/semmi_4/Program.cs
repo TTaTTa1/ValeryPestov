@@ -28,3 +28,26 @@ int num2 = EnteringNumber("Enter a power: ");
 if (num2 < 0) Console.WriteLine("This program does not calculate negative exponents");
 else Console.WriteLine($"{num1}, {num2} -> {Degree(num1, num2)}");
 Console.WriteLine();
+
+// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
+
+int SumOfDigits (int number)
+{
+    number = Math.Abs(number);
+    int result = number % 10;
+    while (number / 10 > 0)
+    {
+        number /= 10;
+        result += number % 10;
+    }
+    return result;
+}
+
+Console.WriteLine("Task 27: Write a program that accepts a number as input\n"
++"and outputs the sum of digits in the number.");
+int num3 = EnteringNumber("Enter a number: ");
+Console.WriteLine($"{num3} -> {SumOfDigits(num3)}");
+Console.WriteLine();
