@@ -51,3 +51,37 @@ Console.WriteLine("Task 27: Write a program that accepts a number as input\n"
 int num3 = EnteringNumber("Enter a number: ");
 Console.WriteLine($"{num3} -> {SumOfDigits(num3)}");
 Console.WriteLine();
+
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+Console.WriteLine("Task 29: Write a program that sets an array of 8 elements\n"
++"and displays them on the screen.");
+
+int[] CreateRandomArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int[size];
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(minValue, maxValue);
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        Console.Write(array[i] + ", ");
+    }
+    Console.Write(array.Length);
+}
+
+int size = 8;
+int min = 0;
+int max = 9;
+int[] myArray = CreateRandomArray(size, min, max);
+PrintArray(myArray);
+Console.Write(" -> [");
+PrintArray(myArray);
+Console.Write("]");
