@@ -78,3 +78,61 @@ int[] myArray2 = CreateRandomArray2(size2, minValue2, maxValue2);
 PrintArray1(myArray2);
 Console.WriteLine(SumEvenPozition(myArray2));
 
+
+// Задача 38: Задайте массив вещественных чисел. 
+// Найдите разницу между максимальным и минимальным элементов массива.
+// [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
+Console.WriteLine("Task 38: Specify an array of real numbers.\n" 
++"Find the difference between the maximum and minimum array elements.");
+
+double[] CreateRandomArray3(int size, int minValue, int maxValue)
+{
+    Random rnd = new();
+    double[] array = new double[size];
+    for(int i = 0; i < size; i++)
+    {
+        array[i] = (maxValue - minValue) * rnd.NextDouble();
+    }
+    return array;
+}
+
+void PrintArray2(double[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]:N2} ");
+    }
+    Console.Write("] => ");
+}
+
+double GetMax(double[] array)
+{
+    double max = array[0];
+        for(int i=0; i < array.Length; i++)
+    { 
+        if (array[i] > max) max = array[i];
+    }
+    return max;
+}
+
+double GetMin(double[] array)
+{
+    double min = array[0];
+        for(int i=0; i < array.Length; i++)
+    { 
+        if (array[i] < min) min = array[i];
+    }
+    return min;
+}
+
+Console.WriteLine("Input array size: ");
+int size3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input array minimal value: ");
+int minValue3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input array maximal value: ");
+int maxValue3 = Convert.ToInt32(Console.ReadLine());
+
+double[] myArray3 = CreateRandomArray3(size3, minValue3, maxValue3);
+PrintArray2(myArray3);
+Console.WriteLine($"{GetMax(myArray3):N2} - {GetMin(myArray3):N2} = {(GetMax(myArray3) - GetMin(myArray3)):N2}");
