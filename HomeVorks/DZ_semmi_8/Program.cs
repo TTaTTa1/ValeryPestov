@@ -22,3 +22,26 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write($"N = {num1} -> ");
 SeriesNumbers(num1);
 Console.WriteLine();
+
+// Задача 66: Задайте значения M и N. Напишите программу,
+// которая найдёт сумму натуральных элементов в промежутке от M до N.
+// M = 1; N = 15 -> 120
+// M = 4; N = 8. -> 30
+
+Console.WriteLine("Task 66. Write a program that finds the sum of natural elements in the range from M to N.");
+
+int SumNumbers(int numN, int numM)
+{
+    if(numN == numM) return numN;
+    else if (numN > numM)
+    {
+        return numN + SumNumbers(numN - 1, numM);
+    }
+    else return numM + SumNumbers(numN, numM - 1);
+}
+
+Console.WriteLine("Input N: ");
+int numN = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input M: ");
+int numM = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"M = {numM}; N = {numN} -> {SumNumbers(numN, numM)}");
