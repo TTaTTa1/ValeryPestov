@@ -1,0 +1,12 @@
+Belkin,Alexandr,+78888888888
+Frolov,Sergey,88888888888
+Garitchev,Leonid,8-900-44-444-77
+Khorobryih,Stas,89996666666
+Petrov,Aleksey,8-999-888-7777
+Romanova,Nataliya,+7-777-77-777-77
+Shirokov,Sergey,8-900-55-555-55
+Sidorov,Vitaliy,8-900-32-659-87
+Sidorova,Yuliya,+71231212312
+Tatarinov,Maksim,+71234512344
+Yakubovskiy,Sergey,8-888-77-666-55,0,& C:/Users/mimyz/AppData/Local/Programs/Python/Python312/python.exe d:/Валерий/HomeVorks/DZ_sprav/ui.py
+Ivanov,Ivan,45456767556
