@@ -1,0 +1,15 @@
+D:\GIg brent\cs2rushA\bin\Debug\net6.0\cs2rushA.exe
+D:\GIg brent\cs2rushA\bin\Debug\net6.0\cs2rushA.deps.json
+D:\GIg brent\cs2rushA\bin\Debug\net6.0\cs2rushA.runtimeconfig.json
+D:\GIg brent\cs2rushA\bin\Debug\net6.0\cs2rushA.dll
+D:\GIg brent\cs2rushA\bin\Debug\net6.0\cs2rushA.pdb
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.csproj.AssemblyReference.cache
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.AssemblyInfoInputs.cache
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.AssemblyInfo.cs
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.csproj.CoreCompileInputs.cache
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.dll
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\refint\cs2rushA.dll
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.pdb
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\cs2rushA.genruntimeconfig.cache
+D:\GIg brent\cs2rushA\obj\Debug\net6.0\ref\cs2rushA.dll
