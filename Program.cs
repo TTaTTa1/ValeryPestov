@@ -39,3 +39,22 @@ string[] ResultArray(string[] array)
     }
     return arrayRes;
 }
+string[] ResultArray(string[] array)
+{
+    int c = 0;
+    int j = 0;
+    for (int i = 0; i < array.Length; i += 1)
+    {
+        if (array[i].Length <= 3) c += 1;
+    }
+    string[] arrayRes = new string[c];
+    for (int i = 0; i < array.Length; i += 1)
+     {
+        if (array[i].Length <= 3)
+        {
+            arrayRes[j] = array[i];
+            j += 1;
+        }
+    }
+    return arrayRes;
+}
